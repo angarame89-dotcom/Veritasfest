@@ -1,24 +1,17 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>Museo del Louvre 360</title>
-    <meta name="description" content="Visor 360 con A-Frame">
-    
-    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+<title>Hola, WebVR! - A-Frame</title>
+<meta name="description" content="Hello, WebVR! - A-Frame">
+<!--con esta script llamo-importo la libreria A-Frame-->
+<script src="< iframe  altura = "500px"  ancho = "100%"  allowfullscreen = "true"  
+src = "https://momento360.com/e/u/239f4a43c2e94b0c8a568fe85b1f9c84?utm_campaign=embed&utm_source=other&heading=-9.7&pitch=3.7&field-of-view=75&size=medium&display-plan=true" > </ iframe >"></script>
 </head>
 <body>
-
-    <a-scene>
-        
-        <a-sky 
-            src="https://i.postimg.cc/8CNzRHmLm/Museo-del-Louvre-Street-View-360.jpg"
-            crossorigin="anonymous">
-        </a-sky>
-
-        <a-camera></a-camera>
-    </a-scene>
-
+	<a-assets>
+	      <img id="MySky" src="https://momento360.com/e/u/239f4a43c2e94b0c8a568fe85b1f9c84?utm_campaign=embed&utm_source=other&heading=-9.7&pitch=3.7&field-of-view=75&size=medium&display-plan=true"><a-assets>
+	<a-scene>
+		<a-sky src="#MySky"></a-sky>
+	</a-scene>
 </body>
 </html>
 
